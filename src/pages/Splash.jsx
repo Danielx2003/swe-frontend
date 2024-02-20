@@ -1,8 +1,10 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 
 export default function Splash() {
+    let navigate = useNavigate()
     function handleClick(e) {
-        alert("CHANGE PAGE")
+        navigate('login')
     }
 
     return (
